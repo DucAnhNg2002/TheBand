@@ -9,9 +9,18 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+    /* Header */
 #header{
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav > li{
@@ -24,27 +33,28 @@ html {
 }
 
 #nav > li > a {
-    color:  rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
 }
 
 #nav li a{
     text-decoration: none;
     line-height: 46px;
-    padding: 0px 24px;
+    padding: 0px 20px;
     display: inline-block;
 }
 
 #nav .subnav li:hover a,
-#nav > li:hover > a {
+#nav > li:hover > a,
+#nav > li:hover > a > div {
     color: #000 !important;
     background-color: #ccc !important;
-
 }
 
 #nav li:hover .subnav {
-    display: block;
+    display: inline-block;
 }
+
 #nav .subnav{
     display: none;
     position: absolute;
@@ -55,12 +65,38 @@ html {
 }
 
 #nav .subnav a{
-    display: block;
-    padding: 0px 16px 0px 12px;
-    line-height: 40px;
+    display: inline-block;
+    padding: 0px 20px 0px 12px;
+    line-height: 40px; 
     color:#000;
 }
 
-#nav .down {
-    font-size: 12px;
+#nav .subnav-down {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0px 21px;
+}
+
+#header .search-icon {
+    color: #ccc;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336 !important;
+}
+
+#slider {
+    background-color: #333;
+}
+
+#content {
+    height: 1000px;
 }
