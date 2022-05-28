@@ -71,7 +71,8 @@ html
 }
 
     /* Header */
-#header {
+#header 
+{
     background-color: black;
     height: 46px;
     position: fixed;
@@ -81,7 +82,8 @@ html
     right: 0;
 }
 
-#nav {
+#nav 
+{
     display: inline-block;
 }
 
