@@ -365,6 +365,7 @@ html
     background-color: #000;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    cursor: pointer;
 }
 
 #content .tour .tour-place-item .place-buy-tickets:hover 
