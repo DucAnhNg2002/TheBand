@@ -1,0 +1,32 @@
+@media all and (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+        width: 100%;
+    }
+    #nav > li > a {
+        display: block;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #header .mobile-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0px 21px;
+        display: inline-block;
+        color: #ccc;
+        font-size: 20px;
+        line-height: 46px;
+    }
+    #header .mobile-menu:hover {
+        background-color: #ccc !important;
+        color: black;
+    }
+}

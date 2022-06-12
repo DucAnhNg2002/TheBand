@@ -19,3 +19,32 @@ style_modal.onclick = function(e) {
         style_modal.style.display = 'none';
     }    
 }
+
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+// Mobile 
+var btnMobileMenu = $('#header .mobile-menu');
+var headerElement = $('#header');
+// open close
+btnMobileMenu.onclick = function() {
+    if(headerElement.style.height != '46px') {
+        headerElement.style.height = '46px';
+    }
+    else {
+        headerElement.style.height = 'auto';
+    }
+}
+
+// auto close when click
+var itemMobileMenu = $$('#header a');
+itemMobileMenu.forEach(function(value,index){
+    value.onclick = function(event) {
+        let elementNext = value.nextElementSibling;
+        if(elementNext != null && elementNext.classList.contains('subnav')) {
+            event.preventDefault();
+        }
+        else {
+            headerElement.style.height = null;
+        }
+    }
+});
