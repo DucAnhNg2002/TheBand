@@ -67,15 +67,15 @@
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                    
                         </p>
                         <div class="member-list row">
-                            <div class="member-item col col-third text-center">
+                            <div class="member-mobile member-item col col-third text-center">
                                 <p class="member-name"> Name </p>
                                 <img src="assets/img/about/bandmember.jpg" alt="">
                             </div>
-                            <div class="member-item col col-third text-center">
+                            <div class="member-mobile member-item col col-third text-center">
                                 <p class="member-name"> Name </p>
                                 <img src="assets/img/about/bandmember.jpg" alt="">
                             </div>
-                            <div class="member-item col col-third text-center">
+                            <div class="member-mobile member-item col col-third text-center">
                                 <p class="member-name"> Name </p>
                                 <img src="assets/img/about/bandmember.jpg" alt="">
                             </div>
@@ -98,7 +98,7 @@
                             <li class="text">November <span class = "none">3 </span></li>
                         </ul>
                         <div class="tour-place-list">
-                            <div class="tour-place-item">
+                            <div class="member-mobile tour-place-item">
                                 <img src="assets/img/tour-place/newyork.jpg" alt="">
                                 <div>
                                     <h3 class ="place">New York</h3>
@@ -107,7 +107,7 @@
                                     <button class ="place-buy-tickets js-buy-ticket"> Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="tour-place-item">
+                            <div class="member-mobile tour-place-item">
                                 <img src="assets/img/tour-place/paris.jpg" alt="">
                                 <div>
                                     <h3 class ="place">Paris</h3>
@@ -116,7 +116,7 @@
                                     <button class ="place-buy-tickets js-buy-ticket"> Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="tour-place-item">
+                            <div class="member-mobile tour-place-item">
                                 <img src="assets/img/tour-place/sanfran.jpg" alt="">
                                 <div>
                                     <h3 class ="place">San Francisco</h3>
@@ -138,37 +138,42 @@
                             Fan? Drop a note!
                         </p>
                         <div class="row-none">
-                            <ul class="list-contact col col-half">
+                            <ul class="list-contact col col-half s-col-full">
                                 <li class="item-contact ti-location-arrow">
                                     <p> Chicago, US </p>
                                 </li>
-                                <li class="item-contact ti-mobile">
+                                <li class="item-contact ti-mobile s-col-full">
                                      <p> Phone: +00 151515 </p>
                                 </li>
-                                <li class="item-contact ti-email">
+                                <li class="item-contact ti-email s-col-full">
                                     <p> Email: mail@mail.com</p>
                                 </li>
                                 <div class="clear"></div>
                             </ul>
-                            <div class="col-none-padding col-half">
+                            <div class="col-none-padding col-half s-col-full">
                                 <div class="row-none" style = "margin-bottom: 8px;">
-                                    <div class="col-none-padding col-half input-row1" style="padding-right: 8px;">
+                                    <div class="col-none-padding col-half input-row1 input" style="padding-right: 8px;">
                                         <input type="text" placeholder="Name" class ="form-info" required> 
                                     </div>
-                                    <div class="col-none-padding col-half input-row1" style="padding-left: 8px;">
+                                    <div class="col-none-padding col-half input-row1 input" style="padding-left: 8px;">
                                         <input type="text" placeholder="Email" class ="form-info" required>
                                     </div>
                                 </div>
                                 <div class="row-none">
-                                    <div class="col-none-padding col-full input-row2">
+                                    <div class="col-none-padding col-full input-row2 input">
                                         <input type="text" placeholder="Message" class ="form-info" required>
                                     </div>
                                 </div>
+                                <button class = "" style="margin: 16px 0px; padding: 8px 16px; border: 0px; float : right; cursor: pointer;"> SEND </button>
+                                <div class="clear"></div>
                             </div>
-                            <button style="margin: 16px 0px; padding: 8px 16px; border: 0px; float : right; cursor: pointer;"> SEND </button>
-                            <div class="clear"></div>
                         </div>
                     </div>
+                    <script>
+                        if(screen.width <= 1023) {
+                            document.querySelector('#contact button').style.width = document.querySelector('#contact input').offsetWidth + 'px';
+                        }
+                    </script>
                 </div>
             </div>
             <div class="map-section">
